@@ -28,7 +28,6 @@ public class Algorithm {
                 j--;
             }
             if (i <= j) {
-                // Execute swap between value of index [i] and value of index [j]
                 tmp = array[i];
                 array[i] = array[j];
                 array[j] = tmp;
@@ -41,7 +40,6 @@ public class Algorithm {
     }
 
     public void quickSort(int[] array, int left, int right) {
-        // Search index of array - vách ngăn
         int index = partition(array, left, right);
         if (left < index - 1) {
             quickSort(array, left, index - 1);
